@@ -28,11 +28,6 @@ export function createReactContext<T extends object>(name: string): CreateReactC
   const useReactContext = () => {
     const context = React.useContext(ReactContext)
 
-    if (typeof context === 'object' && context == null) {
-      console.log(`E_CANNOT_FIND_SCOPE_FOR_PROVIDER_NAME: [${name}]`)
-      return null
-    }
-
     return context
   }
 
