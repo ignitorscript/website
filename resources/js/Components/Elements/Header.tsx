@@ -38,7 +38,11 @@ export const Item = createForwardRef<Ref<'li'>, Props<'li'>>('Header.Item', (pro
 })
 
 export const Link = createForwardRef<Ref<'a'>, Props<'a'>>('Header.Link', (props, ref) => {
-  return <a {...props} ref={ref} />
+  return (
+    <a {...props} ref={ref}>
+      {props.children}
+    </a>
+  )
 })
 
 export const Trigger = createForwardRef<Ref<'button'>, Props<'button'>>(
