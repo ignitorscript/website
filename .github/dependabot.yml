@@ -10,4 +10,4 @@ updates:
     schedule:
       interval: "monthly"
     commit-message:
-      prefix: "npm: "
+      prefix: "[npm]"
