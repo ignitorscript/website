@@ -14,5 +14,7 @@ export const createForwardRef = <T, P>(
 export type Ref<TTag extends keyof React.JSX.IntrinsicElements | React.ComponentType> =
   React.ElementRef<TTag>
 
-export type Props<TTag extends keyof React.JSX.IntrinsicElements | React.ComponentType> =
-  React.ComponentPropsWithoutRef<TTag>
+export type Props<
+  TTag extends keyof React.JSX.IntrinsicElements | React.ComponentType,
+  TProps extends object = {},
+> = Omit<React.ComponentPropsWithoutRef<TTag>, keyof TProps> & TProps
