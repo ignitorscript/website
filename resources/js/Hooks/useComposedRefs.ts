@@ -1,8 +1,8 @@
-import { LegacyRef, useCallback } from 'react'
+import { LegacyRef, RefCallback, useCallback } from 'react'
 
 export default function useComposedRefs<Ref>(...refs: LegacyRef<Ref>[]) {
-  return useCallback(
-    ($ref: Ref) => {
+  return useCallback<RefCallback<Ref>>(
+    ($ref) => {
       let i = 0
       while (i < refs.length) {
         const ref = refs[i]
