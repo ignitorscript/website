@@ -1,9 +1,5 @@
-import { createForwardRef, type Props, type Ref } from '~/js/Utilities/createForwardRef'
-import { SubContainer } from '~/js/Components/Elements/Header/types'
+import { unsafe_createForwardRef as createForwardRef } from '~/js/Utilities/createForwardRef'
 
-export const Content = createForwardRef<Ref<'div'>, Props<'div', SubContainer>>(
-  'Header.Content',
-  ({ 'sub-nav': subNav = false, ...props }, ref) => {
-    return <div {...props} ref={ref} />
-  }
-)
+export const Content = createForwardRef('div', (props, ref) => {
+  return <div {...props} ref={ref} />
+})

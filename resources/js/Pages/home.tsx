@@ -1,35 +1,26 @@
-import * as Header from '../Components/Elements/Header'
+import { useState } from 'react'
+import { unsafe_createComposedEventHandler } from '../Utilities/createComposedEventHandler'
 
 export default function Index() {
+  const [count, setCount] = useState(0)
+
   return (
-    <>
-      <Header.Root>
-        <Header.Navigation>
-          <Header.Block>
-            <Header.Link />
-          </Header.Block>
-          <Header.List>
-            <Header.Item>
-              <Header.Trigger />
-              <Header.Content />
-            </Header.Item>
-            <Header.Item>
-              <Header.Trigger />
-              <Header.Content>
-                <Header.Block />
-                <Header.Sub>
-                  <Header.Item>
-                    <Header.Trigger />
-                    <Header.Content />
-                  </Header.Item>
-                </Header.Sub>
-              </Header.Content>
-            </Header.Item>
-          </Header.List>
-          <Header.Viewport />
-        </Header.Navigation>
-      </Header.Root>
-      <div>Hello World</div>
-    </>
+    <div>
+      <div>Count: {count}</div>
+      <button
+        onClick={unsafe_createComposedEventHandler(() => {
+          setCount(count + 1)
+        })}
+      >
+        INCREMENT
+      </button>
+      <button
+        onClick={unsafe_createComposedEventHandler(() => {
+          setCount(count - 1)
+        })}
+      >
+        DECREMENT
+      </button>
+    </div>
   )
 }

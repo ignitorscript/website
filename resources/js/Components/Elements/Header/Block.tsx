@@ -1,5 +1,5 @@
-import { createForwardRef, type Props, type Ref } from '~/js/Utilities/createForwardRef'
+import { unsafe_createForwardRef as createForwardRef } from '~/js/Utilities/createForwardRef'
 
-export const Block = createForwardRef<Ref<'div'>, Props<'div'>>('Header.Block', (props, ref) => {
+export const Block = createForwardRef('div', (props, ref) => {
   return <div {...props} ref={ref} />
 })
