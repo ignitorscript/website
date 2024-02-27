@@ -1,18 +1,20 @@
 import React from 'react'
 
-export const createForwardRef = <T, P>(
-  name: string,
-  render: React.ForwardRefRenderFunction<T, P>
-) => {
+export function unsafe_createForwardRef<
+  TTag extends
+    | keyof React.JSX.IntrinsicElements
+    | React.ForwardRefExoticComponent<any>
+    | React.ComponentType,
+>(
+  tag: TTag,
+  render: React.ForwardRefRenderFunction<
+    React.ElementRef<TTag>,
+    React.ComponentPropsWithoutRef<TTag>
+  >
+) {
   const Forwarded = React.forwardRef(render)
 
-  Forwarded.displayName = name
+  Forwarded.displayName = `forwardRef(${typeof tag === 'string' ? `${tag as keyof React.JSX.IntrinsicElements}` : tag.displayName})`
 
   return Forwarded
 }
-
-export type Ref<TTag extends keyof React.JSX.IntrinsicElements | React.ComponentType> =
-  React.ElementRef<TTag>
-
-export type Props<TTag extends keyof React.JSX.IntrinsicElements | React.ComponentType> =
-  React.ComponentPropsWithoutRef<TTag>

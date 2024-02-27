@@ -2,10 +2,13 @@ import { defineConfig } from 'vite'
 import adonisjs from '@adonisjs/vite/client'
 import react from '@vitejs/plugin-react'
 import tsconfig from 'vite-tsconfig-paths'
+import path from 'node:path'
 
 export default defineConfig({
   plugins: [
-    tsconfig(),
+    tsconfig({
+      projects: [path.join(import.meta.dirname, 'tsconfig.web.json')],
+    }),
     react(),
     adonisjs({
       /**

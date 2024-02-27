@@ -4,13 +4,6 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "unicorn"
-  ],
-  "extends": [
-    "plugin:prettier/recommended"
-  ],
   "overrides": [
     {
       "env": {
@@ -24,11 +17,15 @@
         "./resources/**/*.ts"
       ],
       "extends": [
-        "eslint:recommended",
+        "plugin:prettier/recommended",
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended"
+      ],
+      "plugins": [
+        "@typescript-eslint",
+        "unicorn"
       ],
       "settings": {
         "react": {
