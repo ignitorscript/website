@@ -18,7 +18,7 @@ interface EventHandlerComposed<T extends Element = Element, E extends Event = Ev
  *
  * @param handlers all of event chainning
  * @example
- * unsafe_createComposedEventHandler(
+ * createComposedEventHandler(
  *  (_event, next) => {
  *    console.log('pipe one')
  *
@@ -30,10 +30,9 @@ interface EventHandlerComposed<T extends Element = Element, E extends Event = Ev
  *)
  * @returns an react event handler
  */
-export function unsafe_createComposedEventHandler<
-  T extends Element = Element,
-  E extends Event = Event,
->(...handlers: EventHandlerComposed<T, E>[]) {
+export function createComposedEventHandler<T extends Element = Element, E extends Event = Event>(
+  ...handlers: EventHandlerComposed<T, E>[]
+) {
   let i = 0
   const track = new Map<string, boolean>()
   const handle = (event: React.SyntheticEvent<T, E>) => {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { unsafe_createComposedEventHandler } from '../Utilities/createComposedEventHandler'
+import { createComposedEventHandler } from '../Utilities/createComposedEventHandler'
 
 export default function Index() {
   const [count, setCount] = useState(0)
@@ -8,16 +8,30 @@ export default function Index() {
     <div>
       <div>Count: {count}</div>
       <button
-        onClick={unsafe_createComposedEventHandler(() => {
-          setCount(count + 1)
-        })}
+        onClick={createComposedEventHandler(
+          (_, next) => {
+            setCount(count + 1)
+
+            next()
+          },
+          () => {
+            console.log('other function')
+          }
+        )}
       >
         INCREMENT
       </button>
       <button
-        onClick={unsafe_createComposedEventHandler(() => {
-          setCount(count - 1)
-        })}
+        onClick={createComposedEventHandler(
+          (_, next) => {
+            setCount(count - 1)
+
+            next()
+          },
+          () => {
+            console.log('other function')
+          }
+        )}
       >
         DECREMENT
       </button>
