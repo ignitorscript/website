@@ -4,17 +4,23 @@
 
 @layer base {
   :root {
-    --text: 8 7 23;
-    --background: 244 244 251;
-    --primary: 0 0 255;
-    --secondary: 88 4 38;
-    --accent: 77 14 0;
+    --text: 96 12% 8%;
+    --background: 90 12% 97%;
+    --primary: 91 100% 51%;
+    --secondary: 133 100% 88%;
+    --accent: 187 100% 50%;
+    --warning: 61, 92%, 53%;
+    --destructive: 0, 100%, 58%;
+    --success: 142, 100%, 50%;
   }
   .dark {
-    --text: 233 232 248;
-    --background: 4 4 11;
-    --primary: 0 0 255;
-    --secondary: 251 167 201;
-    --accent: 255 193 179;
+    --text: 96 12% 92%;
+    --background: 90 13% 3%;
+    --primary: 91 100% 49%;
+    --secondary: 133 100% 12%;
+    --accent: 187 100% 50%;
+    --warning: 61, 98%, 41%;
+    --destructive: 0, 99%, 42%;
+    --success: 142, 98%, 43%;
   }
 }
