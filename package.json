@@ -69,7 +69,7 @@
     "@adonisjs/shield": "^8.1.1",
     "@adonisjs/static": "^1.1.1",
     "@adonisjs/vite": "^2.0.2",
-    "@inertiajs/react": "^1.0.14",
+    "@inertiajs/react": "^1.0.15",
     "@vinejs/vine": "^1.7.1",
     "better-sqlite3": "^9.4.1",
     "edge.js": "^6.0.1",
