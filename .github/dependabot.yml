@@ -11,3 +11,4 @@ updates:
       interval: 'monthly'
     commit-message:
       prefix: '[npm]'
+    open-pull-requests-limit: 20
