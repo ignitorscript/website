@@ -21,14 +21,14 @@ dependencies:
     specifier: ^7.1.1
     version: 7.1.1(@adonisjs/core@6.2.2)(edge.js@6.0.1)
   '@adonisjs/shield':
-    specifier: ^8.1.0
-    version: 8.1.0(@adonisjs/core@6.2.2)(@adonisjs/session@7.1.1)(edge.js@6.0.1)
+    specifier: ^8.1.1
+    version: 8.1.1(@adonisjs/core@6.2.2)(@adonisjs/session@7.1.1)(edge.js@6.0.1)
   '@adonisjs/static':
     specifier: ^1.1.1
     version: 1.1.1(@adonisjs/core@6.2.2)
   '@adonisjs/vite':
     specifier: ^2.0.2
-    version: 2.0.2(@adonisjs/core@6.2.2)(@adonisjs/shield@8.1.0)(edge.js@6.0.1)(vite@5.0.12)
+    version: 2.0.2(@adonisjs/core@6.2.2)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.0.12)
   '@inertiajs/react':
     specifier: ^1.0.14
     version: 1.0.14(react@18.2.0)
@@ -546,8 +546,8 @@ packages:
       edge.js: 6.0.1
     dev: false
 
-  /@adonisjs/shield@8.1.0(@adonisjs/core@6.2.2)(@adonisjs/session@7.1.1)(edge.js@6.0.1):
-    resolution: {integrity: sha512-mLI5We/98s1P4zsk9SLIJ31r48l67oxPusto1issQcXE6fFPBSDRqGmkfAKLIyhbc+gNoq8N/iFg6xINWClb5g==}
+  /@adonisjs/shield@8.1.1(@adonisjs/core@6.2.2)(@adonisjs/session@7.1.1)(edge.js@6.0.1):
+    resolution: {integrity: sha512-b/rIypxfG8HKPRvWYJo7qhvAlvYCFXn7/A7eb/QI/PQV4fMmW4iF9tAykxl5peu4WJCHCwXwR3Y6/j0VerQcmQ==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
       '@adonisjs/core': ^6.2.0
@@ -587,7 +587,7 @@ packages:
     resolution: {integrity: sha512-N8zdNw/bC3ft64e7CGr/LfYDCumoWe3wwePEqq2LRTCjBN/ICyxywW6f60QHLr+q17yHMU6fRFDt0GuRLXtPSA==}
     dev: true
 
-  /@adonisjs/vite@2.0.2(@adonisjs/core@6.2.2)(@adonisjs/shield@8.1.0)(edge.js@6.0.1)(vite@5.0.12):
+  /@adonisjs/vite@2.0.2(@adonisjs/core@6.2.2)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.0.12):
     resolution: {integrity: sha512-DBlJGZFPdfGGtwwp119LZgcXlG8oBIdzxA7nqXZdO7KoEcmZJ9QVYTyJHMc5aYxgbhUXcZtKegNcIrfxXCRwjw==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
@@ -604,7 +604,7 @@ packages:
         optional: true
     dependencies:
       '@adonisjs/core': 6.2.2(@adonisjs/assembler@7.1.1)(@vinejs/vine@1.7.1)(edge.js@6.0.1)
-      '@adonisjs/shield': 8.1.0(@adonisjs/core@6.2.2)(@adonisjs/session@7.1.1)(edge.js@6.0.1)
+      '@adonisjs/shield': 8.1.1(@adonisjs/core@6.2.2)(@adonisjs/session@7.1.1)(edge.js@6.0.1)
       defu: 6.1.4
       edge-error: 4.0.1
       edge.js: 6.0.1
