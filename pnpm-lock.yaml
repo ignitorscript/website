@@ -115,6 +115,9 @@ devDependencies:
   ignitor.create-composed-event-handler:
     specifier: ^0.0.0
     version: 0.0.0(react-dom@18.2.0)(react@18.2.0)
+  ignitor.create-forwardedrefs:
+    specifier: ^0.0.0
+    version: 0.0.0(react-dom@18.2.0)(react@18.2.0)
   pino-pretty:
     specifier: ^10.3.1
     version: 10.3.1
@@ -3883,6 +3886,16 @@ packages:
 
   /ignitor.create-composed-event-handler@0.0.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-c84GsM8gcDPj8U3H9l6nNU5XkJxj3ovNvCWAjsGCzcssJHTwoOa08w2pMmn8RTfgKcu1iwoqjYbwUS9el/UUGg==}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /ignitor.create-forwardedrefs@0.0.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-bdviMRcHU6/uP/uXa6tx98wFCIxWHdj85gLbN3mSvmtZV3wHveikQ8A3bESeFKqcVunUSoTH/RKttdRNxtZ5AQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0

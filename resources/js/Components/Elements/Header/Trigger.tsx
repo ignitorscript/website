@@ -1,4 +1,4 @@
-import { unsafe_createForwardRef as createForwardRef } from '~/js/Utilities/createForwardRef'
+import { createForwardRef } from 'ignitor.create-forwardedrefs'
 
 export const Trigger = createForwardRef('button', (props, ref) => {
   return <button {...props} ref={ref} />

@@ -1,4 +1,4 @@
-import { unsafe_createForwardRef as createForwardRef } from '~/js/Utilities/createForwardRef'
+import { createForwardRef } from 'ignitor.create-forwardedrefs'
 
 export const Item = createForwardRef('li', (props, ref) => {
   return <li {...props} ref={ref} />
