@@ -48,7 +48,8 @@
         "./resources/**/*.tsx",
         "./resources/**/*.js",
         "./resources/**/*.jsx",
-        "./resources/**/*.ts"
+        "./resources/**/*.ts",
+        "./public/assets/**/*.js"
       ],
       "extends": [
         "@adonisjs/eslint-config/app"
