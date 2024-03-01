@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { createComposedEventHandler } from '../Utilities/createComposedEventHandler'
-
+import { createComposedEventHandler } from 'ignitor.create-composed-event-handler'
 export default function Index() {
   const [count, setCount] = useState(0)
 
