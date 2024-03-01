@@ -113,8 +113,8 @@ devDependencies:
     specifier: ^4.6.0
     version: 4.6.0(eslint@8.57.0)
   ignitor.create-composed-event-handler:
-    specifier: ^0.0.0
-    version: 0.0.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.1.1
+    version: 0.1.1(react-dom@18.2.0)(react@18.2.0)
   ignitor.create-forwardedrefs:
     specifier: ^0.0.0
     version: 0.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -331,6 +331,7 @@ packages:
       '@poppinss/validator-lite': 1.0.3
       dotenv: 16.4.5
       split-lines: 3.0.0
+
   /@adonisjs/eslint-config@1.2.2(eslint@8.57.0)(prettier@3.2.5)(typescript@5.3.3):
     resolution: {integrity: sha512-RempMUWWNJjuCYgxC93eeQUC+1cuzYzF/7ijdEIiVefkZ1vqZW+xOHMdzBqJMq9wly3MCvxUob6SiNg06CffJg==}
     peerDependencies:
@@ -352,7 +353,7 @@ packages:
       - supports-color
       - typescript
     dev: true
-    
+
   /@adonisjs/eslint-plugin@1.2.2(eslint@8.57.0)(typescript@5.3.3):
     resolution: {integrity: sha512-EKMobeIy+eaLPVj6QPC2RIC55yU9HPPsIo+GmF0bdFJh3gsmx/qwL1i5FhoaQCOG7dgm03ejh1P5PrE+KejKdg==}
     dependencies:
@@ -3887,8 +3888,8 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: false
 
-  /ignitor.create-composed-event-handler@0.0.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-c84GsM8gcDPj8U3H9l6nNU5XkJxj3ovNvCWAjsGCzcssJHTwoOa08w2pMmn8RTfgKcu1iwoqjYbwUS9el/UUGg==}
+  /ignitor.create-composed-event-handler@0.1.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-32kx1axw+VnCXUQh/wfV8wQzwJv5lBRVw4ZqIdC1CHpG3NMLCWSzbP5OcWwifkUNiLg1+dkTDvx0bF8x+z0wPg==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
