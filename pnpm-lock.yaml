@@ -331,7 +331,6 @@ packages:
       '@poppinss/validator-lite': 1.0.3
       dotenv: 16.4.5
       split-lines: 3.0.0
-
   /@adonisjs/eslint-config@1.2.2(eslint@8.57.0)(prettier@3.2.5)(typescript@5.3.3):
     resolution: {integrity: sha512-RempMUWWNJjuCYgxC93eeQUC+1cuzYzF/7ijdEIiVefkZ1vqZW+xOHMdzBqJMq9wly3MCvxUob6SiNg06CffJg==}
     peerDependencies:
@@ -353,7 +352,7 @@ packages:
       - supports-color
       - typescript
     dev: true
-
+    
   /@adonisjs/eslint-plugin@1.2.2(eslint@8.57.0)(typescript@5.3.3):
     resolution: {integrity: sha512-EKMobeIy+eaLPVj6QPC2RIC55yU9HPPsIo+GmF0bdFJh3gsmx/qwL1i5FhoaQCOG7dgm03ejh1P5PrE+KejKdg==}
     dependencies:
