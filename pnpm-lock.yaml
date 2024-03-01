@@ -113,8 +113,8 @@ devDependencies:
     specifier: ^4.6.0
     version: 4.6.0(eslint@8.57.0)
   ignitor.create-composed-event-handler:
-    specifier: ^0.1.1
-    version: 0.1.1(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.3.0
+    version: 0.3.0(react-dom@18.2.0)(react@18.2.0)
   ignitor.create-forwardedrefs:
     specifier: ^0.0.0
     version: 0.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -3888,8 +3888,8 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: false
 
-  /ignitor.create-composed-event-handler@0.1.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-32kx1axw+VnCXUQh/wfV8wQzwJv5lBRVw4ZqIdC1CHpG3NMLCWSzbP5OcWwifkUNiLg1+dkTDvx0bF8x+z0wPg==}
+  /ignitor.create-composed-event-handler@0.3.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-vJu/c1jD/QlsBFv8tuTXj+4eZH/9rwifDkolCBnxv8bMyqCiCKPnz62TocroM1kt/7AkooeGpD/BzWJERxSjpA==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
