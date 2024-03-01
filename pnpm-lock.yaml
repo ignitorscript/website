@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@adonisjs/auth':
     specifier: ^9.1.1
-    version: 9.1.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(@adonisjs/lucid@20.1.0)(@adonisjs/session@7.1.1)(@japa/plugin-adonisjs@3.0.0)
+    version: 9.1.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(@adonisjs/lucid@20.3.0)(@adonisjs/session@7.1.1)(@japa/plugin-adonisjs@3.0.0)
   '@adonisjs/core':
     specifier: ^6.3.1
     version: 6.3.1(@adonisjs/assembler@7.2.3)(@vinejs/vine@1.7.1)(edge.js@6.0.1)
@@ -15,8 +15,8 @@ dependencies:
     specifier: 1.0.0-7
     version: 1.0.0-7(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(edge.js@6.0.1)
   '@adonisjs/lucid':
-    specifier: ^20.1.0
-    version: 20.1.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
+    specifier: ^20.3.0
+    version: 20.3.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
   '@adonisjs/session':
     specifier: ^7.1.1
     version: 7.1.1(@adonisjs/core@6.3.1)(edge.js@6.0.1)
@@ -210,7 +210,7 @@ packages:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  /@adonisjs/auth@9.1.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(@adonisjs/lucid@20.1.0)(@adonisjs/session@7.1.1)(@japa/plugin-adonisjs@3.0.0):
+  /@adonisjs/auth@9.1.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(@adonisjs/lucid@20.3.0)(@adonisjs/session@7.1.1)(@japa/plugin-adonisjs@3.0.0):
     resolution: {integrity: sha512-gusUQT/9xWYZvdOzHQeqFlI1WDsxi0DIHxjkCNcExwLHpCwBvJ2+VItQ5+dBx5Aryi7Szm2C4od/vg08f//A5g==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
@@ -233,7 +233,7 @@ packages:
         optional: true
     dependencies:
       '@adonisjs/core': 6.3.1(@adonisjs/assembler@7.2.3)(@vinejs/vine@1.7.1)(edge.js@6.0.1)
-      '@adonisjs/lucid': 20.1.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
+      '@adonisjs/lucid': 20.3.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
       '@adonisjs/presets': 2.2.5(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)
       '@adonisjs/session': 7.1.1(@adonisjs/core@6.3.1)(edge.js@6.0.1)
       '@japa/plugin-adonisjs': 3.0.0(@adonisjs/core@6.3.1)(@japa/runner@3.1.1)
@@ -465,8 +465,8 @@ packages:
       abstract-logging: 2.0.1
       pino: 8.18.0
 
-  /@adonisjs/lucid@20.1.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4):
-    resolution: {integrity: sha512-0kCqagM5pvydFFUP5rcc7G+LI18pMNKBnzdYzavAz2jKgw3yclr4I70t9j20DiMJTjWwF0v2X9gFfHXjXSQ7aA==}
+  /@adonisjs/lucid@20.3.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4):
+    resolution: {integrity: sha512-z6SYk07Mtnm9Snoo49Yby5L1p6BT0c4LdEnusfsGHXufWydrjM3+S1zcj0lP3WyGxJX1i5y/iglnFaMJGLwmIg==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
       '@adonisjs/assembler': ^7.0.0
