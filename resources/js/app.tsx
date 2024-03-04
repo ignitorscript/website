@@ -3,7 +3,7 @@ import './bootstrap'
 import { createInertiaApp } from '@inertiajs/react'
 import { createRoot } from 'react-dom/client'
 import { resolvePageComponent } from '@adonisjs/vite/helpers'
-import { StrictMode } from 'react'
+import { ThemeProvider } from './Contexts/Theme'
 
 void createInertiaApp({
   progress: false,
@@ -11,9 +11,9 @@ void createInertiaApp({
   resolve: (name) => resolvePageComponent(`${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),
   setup: ({ App, el, props }) => {
     createRoot(el).render(
-      <StrictMode>
+      <ThemeProvider el={el}>
         <App {...props} />
-      </StrictMode>
+      </ThemeProvider>
     )
   },
 })

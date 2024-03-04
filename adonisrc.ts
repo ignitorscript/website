@@ -79,6 +79,10 @@ export default defineConfig({
       reloadServer: false,
     },
     {
+      pattern: 'resources/css/fonts/**/*',
+      reloadServer: false,
+    },
+    {
       pattern: 'public/**',
       reloadServer: false,
     },
