@@ -23,3 +23,9 @@ yarn-error.log
 
 # Platform specific
 .DS_Store
+
+# testing
+resources/js/Components/**/*.mock.tsx
+resources/js/Components/**/*.mock.ts
+resources/js/Components/**/*.mock.jsx
+resources/js/Components/**/*.mock.js
