@@ -1,11 +1,8 @@
 import Announce from '~/js/Components/Elements/Announce'
-import HeaderBlock from '~/js/Components/Blocks/Header'
-import { Link } from '@inertiajs/react'
 
 export default function Index() {
   return (
     <>
-      <HeaderBlock />
       <div className="flex items-start justify-around my-20 mx-3 h-full">
         <div id="content" className="flex flex-col justify-start items-start w-1/2 mx-3">
           <Announce className="py-1 min-w-max bg-accent/10 rounded-full flex items-center justify-start">

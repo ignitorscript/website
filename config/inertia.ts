@@ -1,3 +1,4 @@
+import app from '@adonisjs/core/services/app'
 import { defineConfig } from '@adonisjs/inertia'
 
 export default defineConfig({
@@ -11,5 +12,14 @@ export default defineConfig({
    */
   sharedData: {
     errors: (ctx) => ctx.session.flashMessages.get('errors'),
+  },
+
+  entrypoint: app.makePath('resources/js/app.tsx'),
+
+  /**
+   * ssr
+   */
+  ssr: {
+    enabled: false,
   },
 })

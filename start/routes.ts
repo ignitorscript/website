@@ -16,3 +16,5 @@ router.get('/', [HomeController, 'index'])
 
 // documentation
 router.get('/docs', [DocumentationController, 'index'])
+router.on('/inertia').renderInertia('home', { version: 6 })
+
