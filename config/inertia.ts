@@ -4,12 +4,20 @@ export default defineConfig({
   /**
    * Path to the Edge view that will be used as the root view for Inertia responses
    */
-  rootView: 'home',
+  rootView: 'app',
 
   /**
    * Data that should be shared with all rendered pages
    */
   sharedData: {
     errors: (ctx) => ctx.session.flashMessages.get('errors'),
+  },
+
+  /**
+   * Options for the server-side rendering
+   */
+  ssr: {
+    enabled: true,
+    entrypoint: 'resources/js/ssr.tsx',
   },
 })

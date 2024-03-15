@@ -23,10 +23,9 @@
     "checkJs": true,
     "emitDeclarationOnly": true,
     "paths": {
-      "@adonisjs/vite/helpers": ["./node_modules/@adonisjs/vite/build/src/client/helpers/inertia"],
       "~/*": ["./resources/*"]
     }
   },
-  "include": ["resources"],
+  "include": ["resources", "vite.config.ts"],
   "exclude": ["node_modules"]
 }
