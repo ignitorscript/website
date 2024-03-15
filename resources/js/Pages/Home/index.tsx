@@ -1,3 +1,12 @@
+import * as Navigation from '~/js/Components/Elements/Navigation'
+
 export default function Index() {
-  return <div>Hello</div>
+  return (
+    <>
+      <Navigation.Root>
+        <Navigation.Portal />
+      </Navigation.Root>
+      <div>Hello</div>
+    </>
+  )
 }
