@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^0.3.4
     version: 0.3.4(react-dom@18.2.0)(react@18.2.0)
   '@ignition-concept/create-forwardref':
-    specifier: ^0.1.4
-    version: 0.1.4(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^0.3.1
+    version: 0.3.1(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
   '@japa/assert':
     specifier: ^2.1.0
     version: 2.1.0(@japa/runner@3.1.1)(openapi-types@12.1.3)
@@ -1172,12 +1172,14 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /@ignition-concept/create-forwardref@0.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-6T3dCRPaer77JT/HpU+6JyZBM1+gPBHZNBvU8b7scy4LVItYDCbj3FDXiz8/nSshXFtUrlDwnY3uNJOG7in0hw==}
+  /@ignition-concept/create-forwardref@0.3.1(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-fFOzihJBzo92PdnT4+bUWXVWVDU8HAGjUamq/AtjVVV8K7ryPiZlAC6h7Ug2fZ8JbA2mAOqE+nIuPwe7mfzi2w==}
     peerDependencies:
+      prop-types: ^15.8.1
       react: ^18.2.0
       react-dom: ^18.2.0
     dependencies:
+      prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: true
