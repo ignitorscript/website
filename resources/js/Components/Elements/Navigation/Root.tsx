@@ -18,10 +18,18 @@ type NavigationRootAction =
   | {
       action: 'disable:tracking'
     }
+  | {
+      action: 'set:offset-portal'
+      top: number
+    }
+  | {
+      action: 'reset:offset-portal'
+    }
 
 interface NavigationRootState {
   currentActiveId: string | null
   tracking: boolean
+  portalOffset: number
 }
 
 interface NavigationRootContext extends NavigationRootState {
@@ -48,6 +56,14 @@ const rootReducer: React.Reducer<NavigationRootState, NavigationRootAction> = (s
       return { ...state, tracking: true }
     }
 
+    case 'set:offset-portal': {
+      return { ...state, portalOffset: action.top }
+    }
+
+    case 'reset:offset-portal': {
+      return { ...state, portalOffset: 0 }
+    }
+
     default: {
       return state
     }
@@ -57,6 +73,7 @@ const rootReducer: React.Reducer<NavigationRootState, NavigationRootAction> = (s
 const rootState: NavigationRootState = {
   currentActiveId: null,
   tracking: false,
+  portalOffset: 0,
 }
 
 export const [NavigationRoot, useNavigationRoot] =

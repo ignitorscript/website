@@ -3,8 +3,11 @@ import * as Navigation from '~/js/Components/Elements/Navigation'
 export default function Index() {
   return (
     <>
-      <Navigation.Group>
+      <Navigation.Group className="px-3 py-4">
         <Navigation.Root className="flex items-center justify-between">
+          <Navigation.Stack>
+            <Navigation.Button>Skip To Content</Navigation.Button>
+          </Navigation.Stack>
           <Navigation.Stack>
             <Navigation.Link href="/">Logo</Navigation.Link>
           </Navigation.Stack>
@@ -14,7 +17,7 @@ export default function Index() {
             </Navigation.Item>
             <Navigation.Item className="bg-red-900">
               <Navigation.Button>Social</Navigation.Button>
-              <Navigation.Panel className="bg-blue-800">Facebook</Navigation.Panel>
+              <Navigation.Panel className="bg-blue-800 absolute">Facebook</Navigation.Panel>
             </Navigation.Item>
             <Navigation.Item className="bg-red-900">
               <Navigation.Button>Blogs</Navigation.Button>
@@ -22,13 +25,14 @@ export default function Index() {
             </Navigation.Item>
             <Navigation.Item className="bg-red-900">
               <Navigation.Button>Resources</Navigation.Button>
-              <Navigation.Content>Resources Content</Navigation.Content>
+              <Navigation.Panel className="bg-blue-800 absolute">
+                Resources Content
+              </Navigation.Panel>
             </Navigation.Item>
           </Navigation.List>
-          <Navigation.Portal className="bg-blue-800 absolute" />
+          <Navigation.Portal className="bg-blue-800 top-[--navigation-portal-offset-top] absolute inset-x-0" />
         </Navigation.Root>
       </Navigation.Group>
-      <div>Hello</div>
     </>
   )
 }

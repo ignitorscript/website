@@ -5,6 +5,10 @@ import { useNavigationList } from './List'
 import { useId, useMemo } from 'react'
 import { makeName } from './utils'
 import { createReactContext } from '~/js/Utilities/createReactContext'
+import {
+  createComposedEventHandler,
+  eventProps,
+} from '@ignition-concept/create-composed-event-handler'
 
 interface NavigationItemContext {
   baseId: string
@@ -18,6 +22,10 @@ export const Item = createForwardRef('li', (props, ref) => {
   const stack = useNavigationStack()
   const list = useNavigationList()
   const id = useId()
+
+  if (!root) {
+    throw new Error('E_CANNOT_FIND_ROOT: cannot find root `Navigation.Root`')
+  }
 
   const omit = useMemo(() => {
     if (stack) {
@@ -41,7 +49,39 @@ export const Item = createForwardRef('li', (props, ref) => {
 
   return (
     <NavigationItem.Provider baseId={baseId}>
-      <li {...props} ref={ref} data-exclude-item={omit} data-navigation-list-item={baseId} />
+      <li
+        {...props}
+        ref={ref}
+        onPointerEnter={createComposedEventHandler((_event, next) => {
+          if (!root.tracking) {
+            return next()
+          }
+
+          if (!omit) {
+            root.dispatch({
+              action: 'register:current-id',
+              id: baseId,
+            })
+          }
+
+          return next()
+        }, eventProps(props.onPointerEnter))}
+        onPointerLeave={createComposedEventHandler((_event, next) => {
+          if (!root.tracking) {
+            return next()
+          }
+
+          if (!omit) {
+            root.dispatch({
+              action: 'unregister:current-id',
+            })
+          }
+
+          return next()
+        }, eventProps(props.onPointerLeave))}
+        data-exclude-item={omit}
+        data-navigation-list-item={baseId}
+      />
     </NavigationItem.Provider>
   )
 })

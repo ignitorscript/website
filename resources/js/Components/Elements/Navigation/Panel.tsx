@@ -23,5 +23,9 @@ export const Panel = createForwardRef('div', (props, ref) => {
     return null
   }
 
+  if (item.baseId !== root.currentActiveId) {
+    return null
+  }
+
   return <div {...props} ref={ref} data-navigation-panel={baseId} />
 })

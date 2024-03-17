@@ -7,9 +7,13 @@ import { useNavigationItem } from './Item'
 import React, { useId, useMemo } from 'react'
 import { makeName } from './utils'
 import { useNavigationRoot } from './Root'
+import { useNavigationStack } from './Stack'
+import { useNavigationList } from './List'
 
 export const Button = createForwardRef('button', (props, ref) => {
   const item = useNavigationItem()
+  const stack = useNavigationStack()
+  const list = useNavigationList()
   const root = useNavigationRoot()
   const id = useId()
 
@@ -19,19 +23,39 @@ export const Button = createForwardRef('button', (props, ref) => {
     )
   }
 
+  const strict = useMemo(() => {
+    if (list) {
+      return true
+    }
+    if (stack) {
+      return false
+    }
+    return true
+  }, [stack, list])
+
+  const baseId = useMemo(() => {
+    if (item) {
+      return makeName('button', id, item.baseId)
+    }
+    return makeName('button', id)
+  }, [item, id])
+
+  if (!strict) {
+    return <button {...props} ref={ref} data-strict={strict} data-navigation-button={baseId} />
+  }
+
   if (!item) {
     throw new Error(
       'E_CANNOT_FIND_ROOT: cannot find root `Navigation.Item` and `Navigation.Button` Must be inside `Navigation.Item`'
     )
   }
 
-  const baseId = useMemo(() => makeName('panel', id, item.baseId), [item, id])
-
   return (
     <button
       {...props}
       ref={ref}
       data-navigation-button={baseId}
+      data-strict={strict}
       onClick={createComposedEventHandler((_event, next) => {
         if (root.tracking) {
           root.dispatch({
