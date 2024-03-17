@@ -1,23 +1,10 @@
 import { createForwardRef } from '@ignition-concept/create-forwardref'
-import { useId, useMemo, useReducer } from 'react'
+import { useId, useMemo } from 'react'
 import { createReactContext } from '~/js/Utilities/createReactContext'
 import { makeName } from './utils'
 
-interface NavigationGroupState {
-  currentActiveId: string | null
-}
-
-type NavigationGroupAction = {}
-
-interface NavigationGroupContext extends NavigationGroupState {
+interface NavigationGroupContext {
   baseId: string
-  dispatch: React.Dispatch<NavigationGroupAction>
-}
-
-const groupReducer: React.Reducer<NavigationGroupState, NavigationGroupAction> = (state) => state
-
-const groupInitialState: NavigationGroupState = {
-  currentActiveId: null,
 }
 
 export const [NavigationGroup, useNavigationGroup] =
@@ -25,13 +12,12 @@ export const [NavigationGroup, useNavigationGroup] =
 
 export const Group = createForwardRef('header', (props, ref) => {
   const id = useId()
-  const [state, dispatch] = useReducer(groupReducer, groupInitialState)
 
   const baseId = useMemo(() => makeName('group', id), [id])
 
   return (
-    <NavigationGroup.Provider baseId={baseId} {...state} dispatch={dispatch}>
-      <header {...props} ref={ref} data-header={baseId} />
+    <NavigationGroup.Provider baseId={baseId}>
+      <header {...props} ref={ref} data-navigation-header={baseId} />
     </NavigationGroup.Provider>
   )
 })
