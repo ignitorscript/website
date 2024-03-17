@@ -53,10 +53,6 @@ export const Item = createForwardRef('li', (props, ref) => {
         {...props}
         ref={ref}
         onPointerEnter={createComposedEventHandler((_event, next) => {
-          if (!root.tracking) {
-            return next()
-          }
-
           if (!omit) {
             root.dispatch({
               action: 'register:current-id',
@@ -67,10 +63,6 @@ export const Item = createForwardRef('li', (props, ref) => {
           return next()
         }, eventProps(props.onPointerEnter))}
         onPointerLeave={createComposedEventHandler((_event, next) => {
-          if (!root.tracking) {
-            return next()
-          }
-
           if (!omit) {
             root.dispatch({
               action: 'unregister:current-id',
