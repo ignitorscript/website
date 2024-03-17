@@ -8,6 +8,9 @@ import { StrictMode } from 'react'
 export default async function render(page: Page<PageProps>) {
   const template = await createInertiaApp({
     page,
+    title: (title) => {
+      return title ? `${title} - ${import.meta.env.VITE_APP_NAME}` : import.meta.env.VITE_APP_NAME
+    },
     render: ReactDOMServer.renderToString,
     resolve: (name) =>
       resolvePageComponent(`./Pages/${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),

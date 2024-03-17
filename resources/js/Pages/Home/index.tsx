@@ -1,8 +1,12 @@
+import { Head } from '@inertiajs/react'
 import * as Navigation from '~/js/Components/Elements/Navigation'
 
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>An Althernative React Component Library</title>
+      </Head>
       <Navigation.Group className="px-3 py-4">
         <Navigation.Root className="flex items-center justify-between">
           <Navigation.Stack
@@ -15,18 +19,18 @@ export default function Index() {
             <Navigation.Link href="/">Logo</Navigation.Link>
           </Navigation.Stack>
           <Navigation.List className="flex items-center justify-between">
-            <Navigation.Item className="bg-red-900">
+            <Navigation.Item className="bg-background mx-4">
               <Navigation.Link href="/">Documentation</Navigation.Link>
             </Navigation.Item>
-            <Navigation.Item className="bg-red-900">
+            <Navigation.Item className="bg-background mx-4">
               <Navigation.Button>Social</Navigation.Button>
               <Navigation.Panel className="bg-blue-800 absolute">Facebook</Navigation.Panel>
             </Navigation.Item>
-            <Navigation.Item className="bg-red-900">
+            <Navigation.Item className="bg-background mx-4">
               <Navigation.Button>Blogs</Navigation.Button>
               <Navigation.Content>Blogs Content</Navigation.Content>
             </Navigation.Item>
-            <Navigation.Item className="bg-red-900">
+            <Navigation.Item className="bg-background mx-4">
               <Navigation.Button>Resources</Navigation.Button>
               <Navigation.Panel className="bg-blue-800 absolute">
                 Resources Content

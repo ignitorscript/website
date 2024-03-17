@@ -7,7 +7,9 @@ import { StrictMode } from 'react'
 
 void createInertiaApp({
   progress: false,
-  title: (title) => (title ? `${title} - Scypher` : 'Scypher'),
+  title: (title) => {
+    return title ? `${title} - ${import.meta.env.VITE_APP_NAME}` : import.meta.env.VITE_APP_NAME
+  },
   resolve: (name) =>
     resolvePageComponent(`./Pages/${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),
   setup: ({ App, el, props }) => {

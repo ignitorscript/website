@@ -7,6 +7,7 @@ import { makeName } from './utils'
 import { createReactContext } from '~/js/Utilities/createReactContext'
 import {
   createComposedEventHandler,
+  delay,
   eventProps,
 } from '@ignition-concept/create-composed-event-handler'
 
@@ -52,7 +53,13 @@ export const Item = createForwardRef('li', (props, ref) => {
       <li
         {...props}
         ref={ref}
-        onPointerEnter={createComposedEventHandler((_event, next) => {
+        onPointerEnter={createComposedEventHandler(async (_event, next) => {
+          if (!root.tracking) {
+            return next()
+          }
+
+          await delay(300)
+
           if (!omit) {
             root.dispatch({
               action: 'register:current-id',
@@ -62,7 +69,13 @@ export const Item = createForwardRef('li', (props, ref) => {
 
           return next()
         }, eventProps(props.onPointerEnter))}
-        onPointerLeave={createComposedEventHandler((_event, next) => {
+        onPointerLeave={createComposedEventHandler(async (_event, next) => {
+          if (!root.tracking) {
+            return next()
+          }
+
+          await delay(300)
+
           if (!omit) {
             root.dispatch({
               action: 'unregister:current-id',
