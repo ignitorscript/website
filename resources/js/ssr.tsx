@@ -3,6 +3,7 @@ import { createInertiaApp } from '@inertiajs/react'
 import { resolvePageComponent } from '@adonisjs/inertia/helpers'
 import type { Page, PageProps } from '@inertiajs/core'
 import { parse } from 'node-html-parser'
+import { StrictMode } from 'react'
 
 export default async function render(page: Page<PageProps>) {
   const template = await createInertiaApp({
@@ -10,7 +11,11 @@ export default async function render(page: Page<PageProps>) {
     render: ReactDOMServer.renderToString,
     resolve: (name) =>
       resolvePageComponent(`./Pages/${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),
-    setup: ({ App, props }) => <App {...props} />,
+    setup: ({ App, props }) => (
+      <StrictMode>
+        <App {...props} />
+      </StrictMode>
+    ),
   })
 
   const root = await Promise.resolve(parse(template.body))

@@ -5,7 +5,10 @@ export default function Index() {
     <>
       <Navigation.Group className="px-3 py-4">
         <Navigation.Root className="flex items-center justify-between">
-          <Navigation.Stack>
+          <Navigation.Stack
+            focusable
+            className="absolute data-[focus=false]:-top-20 data-[focus=true]:top-1 left-0"
+          >
             <Navigation.Button>Skip To Content</Navigation.Button>
           </Navigation.Stack>
           <Navigation.Stack>
