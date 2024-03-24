@@ -2,6 +2,8 @@ import type { HttpContext } from '@adonisjs/core/http'
 
 export default class HomeController {
   async index({ inertia }: HttpContext) {
-    return inertia.render('Home/index')
+    const page = await inertia.render('Home/index')
+
+    return page
   }
 }

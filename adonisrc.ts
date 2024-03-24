@@ -83,4 +83,16 @@ export default defineConfig({
       reloadServer: false,
     },
   ],
+
+  /**
+   * remove assets bundler and using build hook instad
+   */
+  assetsBundler: false,
+
+  /**
+   * remove assets bundler and using build hook instad
+   */
+  unstable_assembler: {
+    onBuildStarting: [() => import('@adonisjs/vite/build_hook')],
+  },
 })
