@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@adonisjs/auth':
     specifier: ^9.1.1
-    version: 9.1.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(@adonisjs/lucid@20.4.0)(@adonisjs/session@7.1.1)(@japa/plugin-adonisjs@3.0.0)
+    version: 9.1.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(@adonisjs/lucid@20.5.1)(@adonisjs/session@7.1.1)(@japa/plugin-adonisjs@3.0.0)
   '@adonisjs/core':
     specifier: ^6.3.1
     version: 6.3.1(@adonisjs/assembler@7.2.3)(@vinejs/vine@1.8.0)(edge.js@6.0.1)
@@ -15,8 +15,8 @@ dependencies:
     specifier: 1.0.0-19
     version: 1.0.0-19(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-8)(edge.js@6.0.1)
   '@adonisjs/lucid':
-    specifier: ^20.4.0
-    version: 20.4.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
+    specifier: ^20.5.1
+    version: 20.5.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
   '@adonisjs/session':
     specifier: ^7.1.1
     version: 7.1.1(@adonisjs/core@6.3.1)(edge.js@6.0.1)
@@ -216,7 +216,7 @@ packages:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  /@adonisjs/auth@9.1.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(@adonisjs/lucid@20.4.0)(@adonisjs/session@7.1.1)(@japa/plugin-adonisjs@3.0.0):
+  /@adonisjs/auth@9.1.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(@adonisjs/lucid@20.5.1)(@adonisjs/session@7.1.1)(@japa/plugin-adonisjs@3.0.0):
     resolution: {integrity: sha512-gusUQT/9xWYZvdOzHQeqFlI1WDsxi0DIHxjkCNcExwLHpCwBvJ2+VItQ5+dBx5Aryi7Szm2C4od/vg08f//A5g==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
@@ -239,7 +239,7 @@ packages:
         optional: true
     dependencies:
       '@adonisjs/core': 6.3.1(@adonisjs/assembler@7.2.3)(@vinejs/vine@1.8.0)(edge.js@6.0.1)
-      '@adonisjs/lucid': 20.4.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
+      '@adonisjs/lucid': 20.5.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
       '@adonisjs/presets': 2.2.5(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)
       '@adonisjs/session': 7.1.1(@adonisjs/core@6.3.1)(edge.js@6.0.1)
       '@japa/plugin-adonisjs': 3.0.0(@adonisjs/core@6.3.1)(@japa/runner@3.1.1)
@@ -264,7 +264,7 @@ packages:
       file-type: 19.0.0
       inflation: 2.1.0
       media-typer: 1.1.0
-      qs: 6.11.2
+      qs: 6.12.0
       raw-body: 2.5.2
 
   /@adonisjs/config@5.0.1:
@@ -435,7 +435,7 @@ packages:
       mime-types: 2.1.35
       on-finished: 2.4.1
       proxy-addr: 2.0.7
-      qs: 6.11.2
+      qs: 6.12.0
       tmp-cache: 1.1.0
       type-is: 1.6.18
       vary: 1.1.2
@@ -474,8 +474,8 @@ packages:
       abstract-logging: 2.0.1
       pino: 8.19.0
 
-  /@adonisjs/lucid@20.4.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4):
-    resolution: {integrity: sha512-q4gwLeQ4ryWTLhqOUCdDUT5D1MHiErfG9EAQw1sTQYuEzFBo4lu31cq59DWPdL6cuId9ucZ8CMQPiYEEPuAakg==}
+  /@adonisjs/lucid@20.5.1(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4):
+    resolution: {integrity: sha512-PXzeRTbkPFhf5ttRv6LbKYbtXXWrYUWxrVmXecHvNbrKZSlP7XQOm45Pgk75lStAXBkEqxgvlC9PRHgM+Bdrog==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
       '@adonisjs/assembler': ^7.0.0
@@ -501,7 +501,7 @@ packages:
       knex-dynamic-connection: 3.1.1(better-sqlite3@9.4.3)
       luxon: 3.4.4
       pretty-hrtime: 1.0.3
-      qs: 6.11.2
+      qs: 6.12.0
       slash: 5.1.0
       tarn: 3.0.2
     transitivePeerDependencies:
@@ -5441,13 +5441,13 @@ packages:
     engines: {node: '>=0.6'}
     dependencies:
       side-channel: 1.0.6
+    dev: false
 
   /qs@6.12.0:
     resolution: {integrity: sha512-trVZiI6RMOkO476zLGaBIzszOdFPnCCXHPG9kn0yuS1uz6xdVxPfZdB3vUig9pxPFDM9BRAgz/YUIVQ1/vuiUg==}
     engines: {node: '>=0.6'}
     dependencies:
       side-channel: 1.0.6
-    dev: false
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
