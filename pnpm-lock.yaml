@@ -12,8 +12,8 @@ dependencies:
     specifier: ^6.3.1
     version: 6.3.1(@adonisjs/assembler@7.2.3)(@vinejs/vine@1.8.0)(edge.js@6.0.1)
   '@adonisjs/inertia':
-    specifier: 1.0.0-19
-    version: 1.0.0-19(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-8)(edge.js@6.0.1)
+    specifier: 1.0.0-24
+    version: 1.0.0-24(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-8)(edge.js@6.0.1)
   '@adonisjs/lucid':
     specifier: ^20.4.0
     version: 20.4.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
@@ -264,7 +264,7 @@ packages:
       file-type: 19.0.0
       inflation: 2.1.0
       media-typer: 1.1.0
-      qs: 6.11.2
+      qs: 6.12.0
       raw-body: 2.5.2
 
   /@adonisjs/config@5.0.1:
@@ -435,19 +435,19 @@ packages:
       mime-types: 2.1.35
       on-finished: 2.4.1
       proxy-addr: 2.0.7
-      qs: 6.11.2
+      qs: 6.12.0
       tmp-cache: 1.1.0
       type-is: 1.6.18
       vary: 1.1.2
       youch: 3.3.3
 
-  /@adonisjs/inertia@1.0.0-19(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-8)(edge.js@6.0.1):
-    resolution: {integrity: sha512-P/09btPJQasjme0SpH1Q34H0ZrcoOacyIukm3iiRBGx60e5roS/zLHP+9ggiyw7TvxJ6ptKscsVMJYzkH3lS6A==}
+  /@adonisjs/inertia@1.0.0-24(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-8)(edge.js@6.0.1):
+    resolution: {integrity: sha512-h+fPFdZaUhH3qO2UFkbGqFgQNQV3iG/9d3Crm+eJLU1ADsSSSmp6cjmgzzMk4dcHS2ZqkbFNMcGfKiR/wxACTg==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
       '@adonisjs/core': ^6.2.0
       '@adonisjs/session': ^7.0.0
-      '@adonisjs/vite': ^3.0.0-6
+      '@adonisjs/vite': ^3.0.0-8
       '@japa/api-client': ^2.0.0
       edge.js: ^6.0.0
     peerDependenciesMeta:
@@ -458,6 +458,7 @@ packages:
       '@adonisjs/session': 7.1.1(@adonisjs/core@6.3.1)(edge.js@6.0.1)
       '@adonisjs/vite': 3.0.0-8(@adonisjs/core@6.3.1)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.1.6)
       '@poppinss/utils': 6.7.2
+      '@tuyau/utils': 0.0.1
       crc-32: 1.2.2
       edge-error: 4.0.1
       edge.js: 6.0.1
@@ -1807,6 +1808,10 @@ packages:
   /@tsconfig/node16@1.0.4:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
+
+  /@tuyau/utils@0.0.1:
+    resolution: {integrity: sha512-Vi2uT9yuy0jZkaW0c1nMgja266DcIoF+/UK0HGMlTH/FUrmKiQLtu64PKBKZtibkezN4nlw3po4SZKvH37SklA==}
+    dev: false
 
   /@types/babel__core@7.20.5:
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -5441,13 +5446,13 @@ packages:
     engines: {node: '>=0.6'}
     dependencies:
       side-channel: 1.0.6
+    dev: false
 
   /qs@6.12.0:
     resolution: {integrity: sha512-trVZiI6RMOkO476zLGaBIzszOdFPnCCXHPG9kn0yuS1uz6xdVxPfZdB3vUig9pxPFDM9BRAgz/YUIVQ1/vuiUg==}
     engines: {node: '>=0.6'}
     dependencies:
       side-channel: 1.0.6
-    dev: false
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
