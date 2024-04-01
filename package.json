@@ -70,7 +70,7 @@
     "@adonisjs/session": "^7.1.1",
     "@adonisjs/shield": "^8.1.1",
     "@adonisjs/static": "^1.1.1",
-    "@adonisjs/vite": "3.0.0-8",
+    "@adonisjs/vite": "3.0.0-11",
     "@inertiajs/core": "^1.0.15",
     "@inertiajs/react": "^1.0.15",
     "@vinejs/vine": "^1.8.0",
