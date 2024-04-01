@@ -13,7 +13,7 @@ dependencies:
     version: 6.3.1(@adonisjs/assembler@7.2.3)(@vinejs/vine@1.8.0)(edge.js@6.0.1)
   '@adonisjs/inertia':
     specifier: 1.0.0-19
-    version: 1.0.0-19(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-8)(edge.js@6.0.1)
+    version: 1.0.0-19(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-11)(edge.js@6.0.1)
   '@adonisjs/lucid':
     specifier: ^20.4.0
     version: 20.4.0(@adonisjs/assembler@7.2.3)(@adonisjs/core@6.3.1)(better-sqlite3@9.4.3)(luxon@3.4.4)
@@ -27,8 +27,8 @@ dependencies:
     specifier: ^1.1.1
     version: 1.1.1(@adonisjs/core@6.3.1)
   '@adonisjs/vite':
-    specifier: 3.0.0-8
-    version: 3.0.0-8(@adonisjs/core@6.3.1)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.1.6)
+    specifier: 3.0.0-11
+    version: 3.0.0-11(@adonisjs/core@6.3.1)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.1.6)
   '@inertiajs/core':
     specifier: ^1.0.15
     version: 1.0.15
@@ -441,7 +441,7 @@ packages:
       vary: 1.1.2
       youch: 3.3.3
 
-  /@adonisjs/inertia@1.0.0-19(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-8)(edge.js@6.0.1):
+  /@adonisjs/inertia@1.0.0-19(@adonisjs/core@6.3.1)(@adonisjs/session@7.1.1)(@adonisjs/vite@3.0.0-11)(edge.js@6.0.1):
     resolution: {integrity: sha512-P/09btPJQasjme0SpH1Q34H0ZrcoOacyIukm3iiRBGx60e5roS/zLHP+9ggiyw7TvxJ6ptKscsVMJYzkH3lS6A==}
     engines: {node: '>=18.16.0'}
     peerDependencies:
@@ -456,7 +456,7 @@ packages:
     dependencies:
       '@adonisjs/core': 6.3.1(@adonisjs/assembler@7.2.3)(@vinejs/vine@1.8.0)(edge.js@6.0.1)
       '@adonisjs/session': 7.1.1(@adonisjs/core@6.3.1)(edge.js@6.0.1)
-      '@adonisjs/vite': 3.0.0-8(@adonisjs/core@6.3.1)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.1.6)
+      '@adonisjs/vite': 3.0.0-11(@adonisjs/core@6.3.1)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.1.6)
       '@poppinss/utils': 6.7.2
       crc-32: 1.2.2
       edge-error: 4.0.1
@@ -605,8 +605,8 @@ packages:
     resolution: {integrity: sha512-+nOykDG44b4JSAdsrTdh5HuZqJpr6F+dHpfNYgHfYsFJIEtZo8plHilZAM7iabCRN5R49SPv5p8Ixcp47Rr50g==}
     dev: true
 
-  /@adonisjs/vite@3.0.0-8(@adonisjs/core@6.3.1)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.1.6):
-    resolution: {integrity: sha512-CMDBS93s+TwPmAmN1Wsm35duEkcO8baUSkeNPwsXz/OdEP4POMQa+LvUWkqGs+oCxKL/Rhq/w3rJIA/zwX0StQ==}
+  /@adonisjs/vite@3.0.0-11(@adonisjs/core@6.3.1)(@adonisjs/shield@8.1.1)(edge.js@6.0.1)(vite@5.1.6):
+    resolution: {integrity: sha512-//Rukit5+XFU+K6TMhoCeRvByhovdWfMV5fro+mQ5GPNibbn111+Dhwkeo8xnc7XNFkp+nw7UM250g94hiOCSQ==}
     engines: {node: '>=20.6.0'}
     peerDependencies:
       '@adonisjs/core': ^6.3.0
