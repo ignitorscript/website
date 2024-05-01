@@ -45,7 +45,7 @@
     "@swc/core": "^1.4.8",
     "@types/luxon": "^3.4.2",
     "@types/node": "^20.11.27",
-    "@types/react": "^18.2.65",
+    "@types/react": "^18.3.1",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.18",
@@ -79,7 +79,7 @@
     "emittery": "^1.0.3",
     "luxon": "^3.4.4",
     "node-html-parser": "^6.1.12",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "reflect-metadata": "^0.2.1"
   }
